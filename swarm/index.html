@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML5/canvas demo, swarm of particles following each other." />
+	<meta name="keywords" content="html5, canvas, javascript, particles, swarm, intelligence, demo" />
+
+	<title>Swarm Intelligence v0.8.1</title>
+	<script type="text/javascript" src="swarm.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-11297782-1']);
+		_gaq.push(['_setDomainName', 'cmikavac.net']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="canvas-container">
+			<canvas id="text-canvas" width="200" height="25"></canvas>
+			<canvas id="main-canvas" width="980" height="560"></canvas>
+			<div id="footer"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+svi followaju najblizeg
+svi followaju jednu od 5 tocaka koje idu random
+tek nakon xy redrawova followaj novu tocku, a do tad followaj mjesto gdje se nalazila ona koja je odabrana
+podesit parametre za pojedine algoritme

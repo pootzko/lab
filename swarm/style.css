@@ -1,0 +1,58 @@
+﻿html, body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	color: #888;
+	line-height: 1.25em;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #BBB;
+}
+
+#wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1px;
+	height: 1px;
+	overflow: visible;
+}
+
+#canvas-container {
+	position: absolute;
+	width: 980px;
+	height: 560px;
+	top: -300px;
+	left: -490px;
+}
+
+#text-canvas {
+	position: absolute;
+	left: 0;
+}
+
+#main-canvas {
+	border: 1px solid #333;
+}
+
+#output {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	margin-top: 4px;
+}
+
+#footer {
+	font-size: 0.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+	position: relative;
+	width: 100%;
+}

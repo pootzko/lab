@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>autokana - jQuery plugin</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="jquery.autokana-1.0.3.js" type="text/javascript"></script>
+	<script src="legend.js" type="text/javascript"></script>
+</head>
+
+
+
+<body>
+<!-- FACEBOOK STUFF -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- /FACEBOOK STUFF -->
+
+<script type="text/javascript">
+	// bind events when document is ready
+	$(document).ready(function() {
+		// attach auto-kana plugin with default options
+		$("#kana_text_box").autokana();
+	});
+</script>
+
+<div id="wrapper">
+	<div id="top_container"> <!-- TOP CONTAINER -->
+		<div id="info_container"> <!-- INFO CONTAINER -->
+			<div id="info"> <!-- INFO -->
+				<h2>autokana - jQuery plugin</h2>
+				<ul>
+					<li>autokana is a jQuery plugin that automatically converts latin (roumaji) to kana (hiragana / katakana) using the auto-correct principle</li>
+					<li>download the latest version with a working example at <a href="https://github.com/pootzko/autokana">github</a></li>
+					<li>on how to use autokana, check the following <a href="http://cmikavac.net/2012/10/02/autokana-jquery-plugin/">link</a></li>
+					<li>to report a bug, feel free to send me an <a href="mailto:pootzko@gmail.com">email</a> or leave a <a href="http://cmikavac.net/2012/10/02/autokana-jquery-plugin/#respond">comment</a></li>
+					<li>for some of my other work, feel free to check the <a href="http://lab.cmikavac.net/">lab</a></li>
+				</ul>
+			</div> <!-- /INFO -->
+
+			<div id="social"> <!-- SOCIAL -->
+				<div id="fb_button" class="social_buttons">
+					<div class="fb-like" data-href="http://lab.cmikavac.net/autokana/" data-send="false" data-layout="button_count" data-width="250" data-show-faces="false" data-font="tahoma"></div>
+				</div>
+
+				<div id="tw_button" class="social_buttons">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lab.cmikavac.net/autokana/" data-text="Check this jQuery plugin for #roumaji to #kana conversion" data-via="pootzko" data-hashtags="autokana">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+
+				<div id="gp_button" class="social_buttons">
+					<!-- Place this tag where you want the +1 button to render. -->
+					<div class="g-plusone" data-size="medium" data-href="http://lab.cmikavac.net/autokana/"></div>
+
+					<!-- Place this tag after the last +1 button tag. -->
+					<script type="text/javascript">
+					(function() {
+						var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+						po.src = 'https://apis.google.com/js/plusone.js';
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					})();
+					</script>
+				</div>
+			</div> <!-- /SOCIAL -->
+		</div> <!-- /INFO CONTAINER -->
+	</div> <!-- /TOP CONTAINER -->
+
+
+	<div id="textbox_container"> <!-- TEXTBOX -->
+		<input id="kana_text_box" type="text" />
+		<script type="text/javascript">
+			document.getElementById("kana_text_box").value="";
+			document.getElementById("kana_text_box").focus();
+		</script>
+	</div> <!-- /TEXTBOX -->
+	<div id="legend_links"> <!-- LEGEND LINKS -->
+		<div id="hiragana_link" onclick="generateTable('hiragana');">hiragana</div>
+		<div id="katakana_link" onclick="generateTable('katakana');">katakana</div>
+	</div> <!-- /LEGEND LINKS -->
+	<div id="legend_table"> <!-- LEGEND TABLE -->
+		<script type="text/javascript">generateTable("hiragana");</script>
+	</div> <!-- /LEGEND TABLE -->
+</div>
+
+<div id="footer"> <!-- FOOTER -->
+	-- Copyleft 2012., all wrongs reserved  --  <a href="http://cmikavac.net">cmikavac.net</a> ::  <a href="mailto:pootzko@gmail.com">pootzko@gmail.com</a> :: <a href="http://cmikavac.net/2012/10/02/autokana-jquery-plugin/#respond">comments</a> --
+</div> <!-- /FOOTER -->
+
+</body>
+</html>
