@@ -61,7 +61,7 @@
 			canvas.addEventListener("click", changeAlgorithm, false);		
 			
 			// footer message
-			var message = "For performance, Swarm Intelligence is best viewed in Chromium/Chrome. To switch between different \"following algorithms\" (3 available ATM) click inside canvas.<br />--- <a href='http://www.cmikavac.net/2011/10/22/swarm-intelligence-in-html5-canvas/'>About Swarm Intelligence experiment</a> (TBA). --- Swarm Intelligence was built upon Daniel Puhes <a href='http://www.spielzeugz.de/html5/liquid-particles.html'>Liquid Particles</a>. Permission granted, thanks Daniel! --- Copyleft 2011. All wrongs reserved. ---";
+			var message = "For performance, Swarm Intelligence is best viewed in Chromium/Chrome. To switch between different \"following algorithms\" (3 available ATM) click inside canvas.<br />--- <a href='http://www.cmikavac.net/2011/10/22/swarm-intelligence-in-html5-canvas/'>About Swarm Intelligence experiment</a>. --- Swarm Intelligence was built upon Daniel Puhes <a href='http://www.spielzeugz.de/html5/liquid-particles.html'>Liquid Particles</a>. Permission granted, thanks Daniel! --- Copyleft 2011. All wrongs reserved. ---";
 			document.getElementById("footer").innerHTML = message;
 		}
 		else {
